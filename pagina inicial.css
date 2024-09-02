@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+*{
+    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+body{
+  font-family: 'Poppins';
+}
+
+.inicio{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    background-color: #303287;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img img{
+  margin-left: 20px;
+}
+
+.icons i{
+    margin-right: 20px;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.text input{
+    width: 400px;
+    margin-right: 10px;
+    border: transparent;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 2px;
+    background-image: url(./Imgs/procurar.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 380px;
+    font-family: 'Poppins';
+}
+.inicio img{
+    width: 200px;
+    margin-right: 10px;
+}
+
+.categorias{
+    background-color: #191a61;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.catg{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.catg i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.catg p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-right: 10px;
+}
+
+.itens a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.itens a:hover{
+  color: rgb(245, 206, 11);
+}
+
+.itens .active{
+  color: rgb(245, 206, 11);;
+}
+
+
+.carrossel {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagens-carrossel {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imagens-carrossel img {
+  flex: 0 0 auto;
+  width: 100%; /* Garante que a largura da imagem cubra o carrossel */
+  height: 100%; /* Garante que a altura da imagem cubra o carrossel */
+  object-fit: fill; /* Assegura que a imagem cubra completamente o espaço sem distorção */
+}
+
+.carrossel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrossel button img {
+  height: 100%;
+}
+
+.anterior {
+  left: 25px;
+}
+
+.proximo {
+  right: 25px;
+}
+
+  .topcs{
+    color: black;
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 25px;
+  }
+
+  .topcs p{
+    min-width: 400px;
+    text-align: center;
+  }
+
+  hr{
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid 2px black;
+  }
+  
+  .categorias-topcs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+
+  .categorias-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categorias-img p{
+    font-family: 'Poppins';
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  .categorias-img img{
+    transform: translateX(0) scale(1);
+    transition: transform 1s;
+  }
+
+  .categorias-img img:hover,
+  .categorias-img img:focus{
+    transform: translateX(0px) scale(1.1);
+  }
+  
+  .superofertas{
+    color: black;
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .superofertas hr{
+    width: 600px;
+  }
+
+  .superofertas p{
+    min-width: 200px;
+    text-align: center;
+  }
+
+  .superofertas-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .superofertas-img p{
+    margin-bottom: 10px;
+    width: 70%;
+    text-align: center;
+  }
+
+  .preco-antigo{
+    text-decoration: line-through;
+    color: rgba(160, 160, 160, 0.833);
+  }
+
+  .preco{
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .superofertas-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 360px;
+    width: 240PX;
+    justify-content: center;
+  }
+
+  .superofertas-img img{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .superofertas-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .superofertas-info input{
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  .superofertas-info button{
+    background-color: #181a9d;
+    font-family: 'Poppins';
+    color: #fff;
+    padding: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+    border: transparent;
+    transition: 0.2s;
+  }
+
+  .superofertas-info button:hover,
+  .superofertas-info button:focus{
+    background-color: #11123a;
+  }
+
+  .arrows img{
+    width: 40px;
+    height: 100%;
+  }
+
+  .carnes{
+    color: black;
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .carnes hr{
+    width: 650px;
+  }
+
+  .carnes p{
+    min-width: 200px;
+    text-align: center;
+  }
+
+  .carnes-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .carnes-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 360px;
+    width: 240PX;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .carnes-img img{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .carnes-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .carnes-info input{
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  .carnes-info button{
+    background-color: #181a9d;
+    font-family: 'Poppins';
+    color: #fff;
+    padding: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+    border: transparent;
+    transition: 0.2s;
+  }
+
+  .carnes-info button:hover,
+  .carnes-info button:focus{
+    background-color: #11123a;
+  }
+
+  .carnes-img p{
+    margin-bottom: 10px;
+  }
+
+  .bebidas-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+
+  footer{
+    padding: 30px;
+    background-color: #303287;
+    border-radius: 8px;
+    border: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 350px;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  footer a{
+    color: whitesmoke;
+  }
+
+  .contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contato h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  
+  .redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .redes h1{
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .icons-redes{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+
+  .pagamentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pagamentos h1 {
+    font-size: 32px;
+  margin-bottom: 30px;
+  }
+
+  .pagamentos-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  .pagamentos-img img{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  li{
+    margin-bottom: 10px;
+  }
+  
+  
+  ul{
+     list-style-type: disc;
+   }

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="pagina inicial.css">
+    <link rel="stylesheet" href="Produtos.html">
+    <title>Supermercado Lima</title>
+</head>
+
+<body>
+    <header class="inicio">
+        <div class="img">
+            <img src="./Imgs/Supermercado.png" alt="">
+        </div>
+        <div class="text">
+            <input for="text" placeholder="Digite aqui.."></input>
+
+        </div>
+        <nav class="icons">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </nav>
+    </header>
+    <header class="categorias">
+        <div class="catg">
+            <i class="fa-solid fa-bars"></i>
+            <p>Categorias</p>
+        </div>
+        <div class="itens">
+            <a class="active" href="pagina inicia.html">Página inicial</a>
+            <a href="Produtos.html">Produtos</a>
+            <a href="blog e receita.html">Blog e Receitas </a>
+        </div>
+    </header>
+    <main>
+        <div class="carrossel">
+            <div class="imagens-carrossel" id="imagens-carrossel">
+                <img src="https://pegapromocao.com.br/wp-content/uploads/2022/09/Promocao-Melhor-a-cada-Dia-Supermercados.jpg"
+                    alt="Imagem 1" />
+                <img src="./Imgs/Supermercado banner.jpg" alt="Imagem 2" />
+                <img src="https://cdn.awsli.com.br/2500x2500/826/826380/produto/47351793/8b0e567818.jpg"
+                    alt="Imagem 3" />
+                <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/7351207-promocao-venda-banner-para-mercado-ou-publicacao-midia-social-gratis-vetor.jpg"
+                    alt="Imagem 4" />
+            </div>
+            <button class="anterior" onclick="moverCarrossel(-1); resetAutoSlide();">
+                <img src="./Imgs/angulo-circulo-esquerda.png" alt="Anterior" />
+            </button>
+            <button class="proximo" onclick="moverCarrossel(1); resetAutoSlide();">
+                <img src="./Imgs/angulo-circulo-direita.png" alt="Próximo" />
+            </button>
+        </div>
+
+        <section class="topcs">
+            <hr>
+            <p>Navegue por Categorias</p>
+            <hr>
+        </section>
+        <div class="categorias-topcs">
+            <div class="categorias-img">
+                <img src="https://savegnagoio.vtexassets.com/assets/vtex.file-manager-graphql/images/e0059d21-8dd9-46de-b360-7625dcc4b30e___b9f1f91e83c7db1292a62838b21b9739.png"
+                    alt="">
+                <p>Frete Gratis</p>
+            </div>
+            <div class="categorias-img">
+                <img src="https://savegnagoio.vtexassets.com/assets/vtex.file-manager-graphql/images/ece2df4f-829f-4b44-b00d-c6ad3ead93ff___d89c7d09eb24258fa412f3a6d46623a3.png"
+                    alt="">
+                <p>Ofertas da Semana</p>
+            </div>
+            <div class="categorias-img">
+                <img src="https://savegnagoio.vtexassets.com/assets/vtex.file-manager-graphql/images/7c606079-af2a-465f-b13a-ed866bf992e6___597611f8cf58c2e2ac615595d54ba2f1.png"
+                    alt="">
+                <p>Carnes</p>
+            </div>
+            <div class="categorias-img">
+                <img src="https://savegnagoio.vtexassets.com/assets/vtex.file-manager-graphql/images/f0948860-0494-4991-8313-9c152d82adf6___7085280fc20acfe18af5a73239473844.png"
+                    alt="">
+                <p>Horti-Fruti</p>
+            </div>
+            <div class="categorias-img">
+                <img src="https://savegnagoio.vtexassets.com/assets/vtex.file-manager-graphql/images/99b6f32f-2da1-41cc-948c-06822582b673___1ee5c5e3d0a5ee8a4c83edd8818e52a0.png"
+                    alt="">
+                <p>Bebidas</p>
+            </div>
+            <div class="categorias-img">
+                <img src="https://savegnagoio.vtexassets.com/assets/vtex.file-manager-graphql/images/85c30356-d947-438b-8648-58ae0015b565___addbfbb9d3ed59f8b250a4b3b7fc4e58.png"
+                    alt="">
+                <p>Limpeza</p>
+            </div>
+        </div>
+        <div class="superofertas">
+            <hr>
+            <p>Super Ofertas</p>
+            <hr>
+        </div>
+        <section class="superofertas-produtos">
+            <div class="arrows">
+                <img src="./Imgs/163745-icon-arrow-left-png-file-hd.png" alt="">
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Açucar uniao.png" alt="">
+                <p>Açucar união 1Kg</p>
+                <p class="preco-antigo">R$ 6,70</p>
+                <spam class="preco">R$ 4,99</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Toddy.jpg" alt="">
+                <p>Achocolatado em pó Toddy 200g</p>
+                <p class="preco-antigo">R$ 8,50</p>
+                <spam class="preco">R$ 7,89</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Oleo liza.webp" alt="">
+                <p>Óleo Liza 900ml</p>
+                <p class="preco-antigo">R$ 6,75</p>
+                <spam class="preco">R$ 5,49</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Girola.png" alt="">
+                <p>Vinho Girola Bordo 750ml Tinto suave</p>
+                <p class="preco-antigo">R$ 18,79</p>
+                <spam class="preco">R$ 15,99</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Leite condensado.png" alt="">
+                <p>Leite Condensado italac 396g</p>
+                <p class="preco-antigo">R$ 7,69</p>
+                <spam class="preco">R$ 6,69</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="arrows">
+                <img src="./Imgs/163745-icon-arrow-right-png-file-hd.png" alt="">
+            </div>
+        </section>
+        <div class="carnes">
+            <hr>
+            <p>Carnes</p>
+            <hr>
+        </div>
+        <section class="carnes-produtos">
+            <div class="arrows">
+                <img src="./Imgs/163745-icon-arrow-left-png-file-hd.png" alt="">
+            </div>
+            <div class="carnes-img">
+                <img src="./Imgs/Contra-File-Bovino-500g.png" alt="">
+                <p>Contra filé 600g</p>
+                <spam class="preco">R$ 30,00</spam>
+                <div class="carnes-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="carnes-img">
+                <img src="./Imgs/Picanha.png" alt="">
+                <p>Picanhas Bassi 1,2Kg</p>
+                <spam class="preco">R$ 129,99</spam>
+                <div class="carnes-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="carnes-img">
+                <img src="./Imgs/Alcatra bovino.png" alt="">
+                <p>Alcatra Bovino</p>
+                <spam class="preco">R$ 34,90/Kg</spam>
+                <div class="carnes-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="carnes-img">
+                <img src="./Imgs/Filé de frango seara.webp" alt="">
+                <p>Filé de Peito de Frango 1Kg</p>
+                <spam class="preco">R$ 24,90</spam>
+                <div class="carnes-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="carnes-img">
+                <img src="./Imgs/Carne-Moida.png" alt="">
+                <p>Carne Moída</p>
+                <spam class="preco">R$ 13,99/Kg</spam>
+                <div class="carnes-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="arrows">
+                <img src="./Imgs/163745-icon-arrow-right-png-file-hd.png" alt="">
+            </div>
+        </section>
+        <div class="superofertas">
+            <hr>
+            <p>Horti-Fruti</p>
+            <hr>
+        </div>
+        <section class="superofertas-produtos">
+            <div class="arrows">
+                <img src="./Imgs/163745-icon-arrow-left-png-file-hd.png" alt="">
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Abacaxi.png" alt="">
+                <p>Abacaxi Pérola</p>
+                <spam class="preco">R$ 14,99/Und</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Banana.png" alt="">
+                <p>Banana D' água 800g</p>
+                <spam class="preco">R$ 4,89</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Maçã.webp" alt="">
+                <p>Maçã</p>
+                <spam class="preco">R$ 2,60/Und</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Limão.png" alt="">
+                <p>Limão 500g</p>
+                <spam class="preco">R$ 3,23 </spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Laranja-Bahia-Importada.png" alt="">
+                <p>Laranja Bahia</p>
+                <spam class="preco">R$ 5,40/Und</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="arrows">
+                <img src="./Imgs/163745-icon-arrow-right-png-file-hd.png" alt="">
+            </div>
+        </section>
+        <div class="superofertas">
+            <hr>
+            <p>Bebidas</p>
+            <hr>
+        </div>
+        <section class="bebidas-produtos">
+            <div class="arrows">
+                <img src="./Imgs/163745-icon-arrow-left-png-file-hd.png" alt="">
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Coca.jpeg" alt="">
+                <p>Coca Cola 2L</p>
+                <spam class="preco">R$ 8,89</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/FANTA-LARANJA-2L.webp" alt="">
+                <p>Fanta Laranja 2L</p>
+                <spam class="preco">R$ 6,00</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Refrigerante-Jaboti-guarana-2L.png" alt="">
+                <p>Jaboti Guaraná 2L</p>
+                <spam class="preco">R$ 5,49</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Guaraná.png" alt="">
+                <p>Guaraná Antártica</p>
+                <spam class="preco">R$ 7,99</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="superofertas-img">
+                <img src="./Imgs/Monster energy.png" alt="">
+                <p>Energético Monster 473ml</p>
+                <spam class="preco">R$ 8,99</spam>
+                <div class="superofertas-info">
+                    <input type="number">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+            <div class="arrows">
+                <img src="./Imgs/163745-icon-arrow-right-png-file-hd.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contato">
+            <h1>Atendimento</h1>
+                <a href="">contato@lima.com</a>
+                <strong>(16) 9912-5003</strong>
+        </div>
+        <div class="redes">
+            <h1>Redes sociais</h1>
+            <div class="icons-redes">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        </div>
+        <div class="pagamentos">
+            <h1>Formas de Pagamento</h1>
+            <div class="pagamentos-img">
+                <img src="./Imgs/Hiper card.png" alt="">
+                <img src="./Imgs/Master card.png" alt="">
+                <img src="./Imgs/Visa.png" alt="">
+                <img src="./Imgs/Elo.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="carrosel.js"></script>
+</body>
+
+</html>
